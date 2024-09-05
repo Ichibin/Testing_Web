@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(36, 49, 41);
+}
+
+header {
+    background-color: hsla(0, 0%, 50%, 0.808);
+    text-align: center;
+    padding: 25px;
+}
+
+.navbar {
+    background-color: hsl(0, 0%, 50%);
+    height: 50px;
+}
+
+aside {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+section {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+article {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+footer {
+    display: block;
+    clear: both;
+    background-color: hsla(0, 0%, 50%, 0.808);
+    text-align: center;
+    padding: 25px;
+}
+
+@media screen and (max-width:600px) {
+
+    aside,
+    section,
+    article {
+        width: 100%;
+    }
+}
+
+.gallery {
+    display: inline-block;
+    border: 1px solid grey;
+    margin: 5px;
+    width: 200px;
+}
+
+.gallery .description {
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover {
+    border-color: brown;
+    border-width: 3px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    /* flex-direction: column-reverse; */
+    border: 10px solid black;
+    height: 200px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.box {
+    width: 20px;
+    height: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+#box1 {
+
+    background-color: red;
+}
+
+#box2 {
+    background-color: yellow;
+}
+
+#box3 {
+    background-color: green;
+}
+
+#box4 {
+    background-color: blue;
+}
+
+#box11 {
+    width: 200px;
+    height: 200px;
+    border: 5px solid;
+    font-size: 10em;
+    text-align: center;
+    background-color: hsl(120, 60%, 60%);
+
+
+    transform: translate(100px, 200px);
+    /* x, y */
+}
+
+#box12 {
+    width: 200px;
+    height: 200px;
+    border: 5px solid;
+    font-size: 10em;
+    text-align: center;
+    background-color: hsl(229, 60%, 60%);
+
+
+    transform: rotateZ(45deg);
+    /* x, y */
+}
+
+#box22 {
+    width: 200px;
+    height: 200px;
+    border: 5px solid;
+    font-size: 10em;
+    text-align: center;
+    background-color: hsl(330, 60%, 60%);
+
+
+    transform: translateX(100%) rotateZ(45deg) scale(0.5)
+        /* x, y */
+}
+
+#animations {
+    width: 250px;
+    height: 250px;
+    font-size: 5em;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 250px;
+    background-color: #6F4E37;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(.68, -0.55, .27, 1.55);
+    /* opacity: 0; */
+}
+
+/* #animations:active {
+    /*  */
+/* } */
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(300%);
+    }
+
+}
+
+@keyframes slideRight {
+    to {
+        transform: translateX(300%);
+    }
+
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(300%);
+    }
+
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(300%);
+    }
+
+}
+
+@keyframes rotate {
+    25% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(2, 2);
+    }
+
+}
+
+@keyframes shrink {
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: orange;
+    }
+
+    40% {
+        background-color: yellow;
+    }
+
+    60% {
+        background-color: green;
+    }
+
+    80% {
+        background-color: blue;
+    }
+
+    100% {
+        background-color: purple;
+    }
+}
+
+@keyframes glow {
+    50% {
+        box-shadow: 0px 0px 50px yellow;
+    }
+}

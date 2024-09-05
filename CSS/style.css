@@ -1,5 +1,13 @@
 body {
     background-color: lightblue;
+    /* border: 3px solid; */
+    /* display: flow-root; */
+    /* background-image: url(peppo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll; */
+    /* background-size: cover; */
+
 }
 
 #p1 {
@@ -30,7 +38,32 @@ body {
 
 h1 {
     font-family: Opensans;
+    border: 3px solid blanchedalmond;
+    border-radius: 10px;
+    text-shadow: 3px 3px 5px red, -3px -3px 5px blue;
 
+}
+
+/* 
+.box {
+    border: 1px;
+    font-size: 5em;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.432);
+    box-shadow: 3px 3px 5px;
+    margin: auto;
+
+} */
+
+#box1 {
+
+    background-color: rgb(161, 54, 54);
+
+}
+
+#box2 {
+    background-color: rgb(98, 98, 185);
 }
 
 p {
@@ -38,4 +71,275 @@ p {
     font-size: 12px;
     font-weight: bold;
     font-style: italic;
+
+}
+
+#img1 {
+    margin-right: 20px;
+    float: left;
+}
+
+#img2 {
+    float: right;
+    margin-left: 10px;
+}
+
+/* div {
+    border: 2px solid;
+    height: 75px;
+    overflow: auto;
+    /*  this content will overflow by this amount */
+/* overflow-clip-margin: 13px; */
+
+/* } */
+
+
+/* div {
+    background-color: blanchedalmond;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+span {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+} */
+/* * {
+    box-sizing: border-box;
+} */
+
+/* .container {
+    background-color: chartreuse;
+    height: 90vh;
+} */
+
+.box5 {
+    border: 2px solid;
+    padding: 25px;
+    background-color: yellow;
+    height: auto;
+    float: center;
+    text-align: center;
+
+
+
+}
+
+#box123 {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+
+    position: relative;
+    left: 50px;
+    top: 0px;
+
+}
+
+#box456 {
+    background-color: rgb(17, 136, 67);
+    width: 100px;
+    height: 100px;
+
+    position: static;
+    top: 50px;
+    left: 50px;
+
+    /* left: 50px;
+    top: 50px; */
+
+}
+
+#container {
+    border: 2px solid;
+
+}
+
+#container+p {
+    background-color: aquamarine;
+}
+
+/* 
+a:link {
+    color: rgb(95, 23, 41);
+}
+
+a:hover {
+    color: rgb(72, 219, 224);
+}
+
+a:active {
+    color: darkblue;
+    font-size: 1.1em;
+}
+
+a:visited {
+    color: red;
+} */
+
+/* li:hover {
+    background-color: yellow;
+}
+
+li:not(:hover) {
+    background-color: rgb(196, 196, 196);
+} */
+
+li:hover {
+    background-color: yellow;
+}
+
+#greeting p {
+    background-color: hsl(240, 74%, 74%);
+    padding: 10 px;
+    display: none;
+}
+
+#greeting:hover p {
+    display: block;
+}
+
+
+h2::first-letter {
+    font-size: 2em;
+    font-style: italic;
+}
+
+/* p::first-line {
+    background-color: aqua;
+
+} */
+
+p::selection {
+    color: rgb(0, 224, 11);
+    background-color: darkgray;
+}
+
+#fruit li::before {
+    /* content: "✔️"; */
+    font-size: 1em;
+}
+
+#apple::after {
+    content: "🍎";
+}
+
+#orange::after {
+    content: "🍊";
+}
+
+#banana::after {
+    content: "🍌";
+}
+
+#fruit li::marker {
+    content: "✓";
+    color: greenyellow;
+    font-size: 1.2em;
+}
+
+.pagination {
+    text-align: center;
+
+}
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+
+.pagination a.active {
+    background-color: rgb(144, 113, 151);
+    font-weight: bold;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: rgb(173, 173, 173);
+    border-radius: 5px;
+
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: hsl(0, 0%, 80%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .menu_content {
+    display: none;
+    background-color: hsl(0, 0%, 95%);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.74);
+}
+
+.dropdown:hover .menu_content {
+    display: block;
+
+}
+
+.dropdown:hover button {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.dropdown a:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav_bar ul {
+    list-style-type: none;
+    background-color: hsl(0, 0%, 25%);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+
+}
+
+.nav_bar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.nav_bar a:hover {
+    background-color: hsl(0, 0%, 55%);
+
+}
+
+.nav_bar li {
+    float: left;
 }
